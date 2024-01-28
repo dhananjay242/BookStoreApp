@@ -5,6 +5,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 //import com.google.common.base.Predicates;
@@ -53,4 +56,11 @@ public class BookPriceApplication implements WebMvcConfigurer {
 		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/METAINF/resources/webjars/");
 	}
 
+	/*
+	 * @Configuration public static class SecurityPermitAllConfig {
+	 * 
+	 * @Bean protected SecurityFilterChain filterChain(HttpSecurity http) throws
+	 * Exception { return http.authorizeHttpRequests((authorizeRequests) ->
+	 * authorizeRequests.anyRequest().permitAll()) .csrf().disable().build(); } }
+	 */
 }
