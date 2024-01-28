@@ -1,10 +1,11 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <title>JLC Bookstore</title>
-<link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
-	rel="stylesheet">
+<!-- <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link href="mycss/bookstore.css" rel="stylesheet">
 </head>
 <body>
