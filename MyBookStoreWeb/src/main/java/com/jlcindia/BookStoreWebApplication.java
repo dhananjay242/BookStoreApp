@@ -1,4 +1,4 @@
-package com.jlcindia.bookstoreweb;
+package com.jlcindia;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,10 +48,10 @@ public class BookStoreWebApplication implements WebMvcConfigurer {
 		return resolver;
 	}
 
-	@Override
+	@Override 
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/METAINF/resources/webjars/");
-		registry.addResourceHandler("/mycss/**").addResourceLocations("classpath:/METAINF/resources/mycss/");
+		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
 	}
 
+	
 }

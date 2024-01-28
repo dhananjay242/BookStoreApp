@@ -3,8 +3,9 @@
 <html>
 <head>
 <title>JLC Bookstore</title>
-<link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
-	rel="stylesheet">
+<!-- <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link href="mycss/bookstore.css" rel="stylesheet">
 </head>
 <body>
