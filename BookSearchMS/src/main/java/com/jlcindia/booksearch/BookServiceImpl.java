@@ -22,6 +22,8 @@ public class BookServiceImpl implements BookService {
 	BookRatingDAO bookRatingDAO;
 	@Autowired
 	BookDAO bookDAO;
+	@Autowired
+	BookPriceProxy bookPriceProxy;
 
 	@Override
 	public List<Book> getBooks(String author, String category) {
@@ -60,8 +62,9 @@ public class BookServiceImpl implements BookService {
 
 		// 4.Book Price Details – Invoking BookPriceMS
 		RestTemplate bookPriceRest = new RestTemplate();
-		String endpoint = "http://localhost:9000/bookPrice/" + bookId;
-		BookPriceInfo bpInfo = bookPriceRest.getForObject(endpoint, BookPriceInfo.class);
+//		String endpoint = "http://localhost:9000/bookPrice/" + bookId;
+//		BookPriceInfo bpInfo = bookPriceRest.getForObject(endpoint, BookPriceInfo.class);
+		BookPriceInfo bpInfo = bookPriceProxy.getBookPrice(bookId);
 		bookInfo.setPrice(bpInfo.getPrice());// 9
 		bookInfo.setOffer(bpInfo.getOffer());// 10
 
