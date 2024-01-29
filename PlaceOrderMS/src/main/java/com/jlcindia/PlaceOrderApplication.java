@@ -1,4 +1,4 @@
-package com.jlcindia.placeorder;
+package com.jlcindia;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
