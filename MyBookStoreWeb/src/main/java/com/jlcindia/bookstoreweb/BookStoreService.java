@@ -2,10 +2,6 @@ package com.jlcindia.bookstoreweb;
 
 import java.util.*;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public interface BookStoreService {
 	public List<String> getAuthorsList();
 

@@ -2,13 +2,8 @@ package com.jlcindia.placeorder;
 
 import jakarta.persistence.*;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @Entity
 @Table(name = "mybookinventory", schema = "jlcordersdb")
-//@ApiModel("BookInventory contains Inevntory Details")
 public class BookInventory {
 	@Id
 	@Column(name = "book_id")

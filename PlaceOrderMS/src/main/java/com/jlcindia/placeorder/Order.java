@@ -2,13 +2,8 @@ package com.jlcindia.placeorder;
 
 import jakarta.persistence.*;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @Entity
 @Table(name = "myorders", schema = "jlcordersdb")
-//@ApiModel("Order contains all the Order Details")
 public class Order {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "orderId_generator")

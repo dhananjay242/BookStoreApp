@@ -7,13 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class PlaceOrderApplication implements WebMvcConfigurer {
-	static Logger log = LoggerFactory.getLogger(PlaceOrderApplication.class);
+public class UserRatingApplication implements WebMvcConfigurer {
+	static Logger log = LoggerFactory.getLogger(UserRatingApplication.class);
 
 	public static void main(String args[]) {
-		log.info(" PlaceOrderMS - Begin ");
-		SpringApplication.run(PlaceOrderApplication.class, args);
-		log.info(" PlaceOrderMS - End ");
+		log.info(" UserRatingMS - Begin ");
+		SpringApplication.run(UserRatingApplication.class, args);
+		log.info(" UserRatingMS - End ");
 	}
 
 }

@@ -2,10 +2,6 @@ package com.jlcindia.bookstoreweb;
 
 import java.util.List;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class OrderInfo {
 	private Order order;
 	private List<OrderItem> itemsList;

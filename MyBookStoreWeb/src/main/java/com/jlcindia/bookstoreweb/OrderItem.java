@@ -1,9 +1,5 @@
 package com.jlcindia.bookstoreweb;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class OrderItem {
 	private Integer orderItemId;
 	private Integer orderId;
@@ -13,7 +9,6 @@ public class OrderItem {
 
 	public OrderItem() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public OrderItem(Integer orderItemId, Integer orderId, Integer bookId, int qty, double cost) {

@@ -6,10 +6,6 @@ import org.slf4j.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @Service
 public class BookStoreServiceImpl implements BookStoreService {
 	static Logger log = LoggerFactory.getLogger(BookStoreServiceImpl.class);

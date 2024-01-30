@@ -1,9 +1,5 @@
 package com.jlcindia.bookstoreweb;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class BookInfo {
 	private Integer bookId;
 	private String bookName;
@@ -17,7 +13,6 @@ public class BookInfo {
 
 	public BookInfo() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public BookInfo(Integer bookId, String bookName, String author, String publications, String category, double price,

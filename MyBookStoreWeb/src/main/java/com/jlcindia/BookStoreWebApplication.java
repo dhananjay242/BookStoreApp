@@ -11,12 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @SpringBootApplication
-//@EnableSwagger2
 public class BookStoreWebApplication implements WebMvcConfigurer {
 	static Logger log = LoggerFactory.getLogger(BookStoreWebApplication.class);
 
@@ -25,19 +20,6 @@ public class BookStoreWebApplication implements WebMvcConfigurer {
 		SpringApplication.run(BookStoreWebApplication.class, args);
 		log.info(" BookStoreWeb - End ");
 	}
-
-//	private ApiInfo getApiDetails() {
-//		return new ApiInfo("JLC BookStore- API", "BookPrice API - part of BookStore", "1.0", "Free to use ",
-//				new Contact("Srinivas Dande", "https://www.jlcindia.com", "sri@jlcindia.com"), "API Under Free Licence",
-//				"https://www.jlcindia.com");
-//	}
-//
-//	@Bean
-//	public Docket api() {
-//		return new Docket(DocumentationType.SWAGGER_2).select().paths(PathSelectors.any())
-//				.apis(Predicates.not(RequestHandlerSelectors.basePackage("org.springframework.boot"))).build()
-//				.apiInfo(getApiDetails());
-//	}
 
 	@Bean
 	public ViewResolver viewResolver() {
@@ -48,10 +30,9 @@ public class BookStoreWebApplication implements WebMvcConfigurer {
 		return resolver;
 	}
 
-	@Override 
+	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
 	}
 
-	
 }

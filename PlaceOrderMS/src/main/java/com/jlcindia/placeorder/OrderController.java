@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @CrossOrigin // CORS
 @RestController
 public class OrderController {
@@ -23,19 +19,18 @@ public class OrderController {
 	OrderService orderService;
 
 	@PostMapping("/placeOrder")
-//	@ApiOperation(value = " placeOrder", response = void.class, notes = "placeOrder")
 	public void placeOrder(@RequestBody OrderInfo orderInfo) {
 		log.info("---OrderController---placeOrder()-----");
 		orderService.placeOrder(orderInfo);
 	}
+
 	@GetMapping("/getAllPlacedOrders")
-//	@ApiOperation(value = " placeOrder", response = void.class, notes = "placeOrder")
 	public List<Order> getAllPlacedOrders() {
 		log.info("---OrderController---getAllPlacedOrders()-----");
 		return orderService.getAllPlacedOrders();
 	}
+
 	@GetMapping("/myorders/{userId}")
-//@ApiOperation(value = " getOrdersByUserId", response = List.class, notes = "Return Orders belongs User") 
 	public List<Order> getOrdersByUserId(@PathVariable String userId) {
 		log.info("---OrderController---getOrdersByUserId()-----");
 		List<Order> myoders = orderService.getOrdersByUserId(userId);

@@ -8,13 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-//import io.swagger.annotations.ApiOperation;
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 
 @CrossOrigin // CORS
 @RestController
@@ -24,7 +18,6 @@ public class BookPriceController {
 	BookPriceService bookPriceService;
 
 	@GetMapping("/bookPrice/{bookId}")
-//	@ApiOperation(value = " getBookPrice", response = BookPrice.class, notes = "Gives BookPrice Objectof given bookId")
 	public BookPrice getBookPrice(@PathVariable Integer bookId) {
 		log.info("---BookPriceController---getBookPrice()-----");
 		BookPrice bookPrice = bookPriceService.getBookPriceById(bookId);
@@ -32,19 +25,17 @@ public class BookPriceController {
 	}
 
 	@GetMapping("/offeredPrice/{bookId}")
-//	@ApiOperation(value = " getOfferedPrice", response = double.class, notes = "Gives Offered Priceof given bookId")
 	public double getOfferedPrice(@PathVariable Integer bookId) {
 		log.info("---BookPriceController---getOfferedPrice()-----");
 		double offeredPrice = bookPriceService.getOfferedPriceById(bookId);
 		return offeredPrice;
 	}
-	
+
 	@GetMapping("/getAllBook")
-//	@ApiOperation(value = " getBookPrice", response = BookPrice.class, notes = "Gives BookPrice Objectof given bookId")
 	public List<BookPrice> getBooks() {
 		log.info("---BookPriceController---getBookPrice()-----");
 		List<BookPrice> allBooks = bookPriceService.getAllBooks();
 		return allBooks;
 	}
-	
+
 }

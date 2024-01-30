@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @Controller
 public class BookStoreController {
 	static Logger log = LoggerFactory.getLogger(BookStoreController.class);

@@ -1,9 +1,5 @@
 package com.jlcindia.bookstoreweb;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class Order {
 	private Integer orderId;
 	private String orderDate;
@@ -14,7 +10,6 @@ public class Order {
 
 	public Order() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Order(Integer orderId, String orderDate, String userId, int totalQty, double totalCost, String status) {

@@ -2,13 +2,8 @@ package com.jlcindia.placeorder;
 
 import jakarta.persistence.*;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @Entity
 @Table(name = "myorderitems", schema = "jlcordersdb")
-//@ApiModel("OrderItem contains OrderItem Details")
 public class OrderItem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "orderItemId_generator")
@@ -26,7 +21,6 @@ public class OrderItem {
 
 	public OrderItem() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public OrderItem(Integer orderItemId, Integer orderId, Integer bookId, int qty, double cost) {

@@ -9,16 +9,12 @@ import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 @Service
 @Transactional
 public class BookPriceServiceImpl implements BookPriceService {
 
 	static Logger log = LoggerFactory.getLogger(BookPriceServiceImpl.class);
-	
+
 	@Autowired
 	BookPriceDAO bookPriceDAO;
 

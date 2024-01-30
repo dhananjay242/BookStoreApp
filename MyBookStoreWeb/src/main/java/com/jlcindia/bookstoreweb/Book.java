@@ -1,9 +1,5 @@
 package com.jlcindia.bookstoreweb;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class Book {
 	private Integer bookId;
 	private String bookName;
@@ -13,7 +9,6 @@ public class Book {
 
 	public Book() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Book(Integer bookId, String bookName, String author, String publications, String category) {

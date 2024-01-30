@@ -1,9 +1,5 @@
 package com.jlcindia.bookstoreweb;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class UserRating {
 	private Integer ratingId;
 	private String userId;
@@ -13,7 +9,6 @@ public class UserRating {
 
 	public UserRating() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public UserRating(Integer ratingId, String userId, Integer bookId, double rating, String review) {

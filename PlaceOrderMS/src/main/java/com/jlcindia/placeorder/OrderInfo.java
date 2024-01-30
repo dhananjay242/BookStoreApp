@@ -2,10 +2,6 @@ package com.jlcindia.placeorder;
 
 import java.util.List;
 
-/* 
-* @Author : Srinivas Dande 
-* @company : Java Learning Center 
-* */
 public class OrderInfo {
 	private Order order;
 	private List<OrderItem> itemsList;
@@ -34,5 +30,5 @@ public class OrderInfo {
 	public void setItemsList(List<OrderItem> itemsList) {
 		this.itemsList = itemsList;
 	}
-	
+
 }
